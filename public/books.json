@@ -1,0 +1,121 @@
+[
+	{
+	  "bookId": 1,
+	  "bookName": "The Great Gatsby",
+	  "author": "F. Scott Fitzgerald",
+	  "image": "https://i.ibb.co/C1Fcvbp/book1.jpg",
+	  "review": "A story of love, wealth, and tragedy set in the roaring twenties.",
+	  "totalPages": 180,
+	  "rating": 4.5,
+	  "category": "Fiction",
+	  "tags": ["Classic", "Romance"],
+	  "publisher": "Scribner",
+	  "yearOfPublishing": 1925
+	},
+	{
+	  "bookId": 2,
+	  "bookName": "To Kill a Mockingbird",
+	  "author": "Harper Lee",
+	  "image": "https://i.ibb.co/sjD6KDr/b2.jpg",
+	  "review": "A powerful story of racial injustice and moral growth in the American South.",
+	  "totalPages": 281,
+	  "rating": 4.8,
+	  "category": "Fiction",
+	  "tags": ["Classic", "Legal Drama"],
+	  "publisher": "J. B. Lippincott & Co.",
+	  "yearOfPublishing": 1960
+	},
+	{
+	  "bookId": 3,
+	  "bookName": "1984",
+	  "author": "George Orwell",
+	  "image": "https://i.ibb.co/7YvQCmP/b3.jpg",
+	  "review": "A dystopian novel depicting a totalitarian regime and its impact on individual freedom.",
+	  "totalPages": 328,
+	  "rating": 4.6,
+	  "category": "Fiction",
+	  "tags": ["Dystopian", "Political Fiction"],
+	  "publisher": "Secker & Warburg",
+	  "yearOfPublishing": 1949
+	},
+	{
+	  "bookId": 4,
+	  "bookName": "The Catcher in the Rye",
+	  "author": "J. D. Salinger",
+	  "image": "https://i.ibb.co/Wt0dFD8/b4.jpg",
+	  "review": "A coming-of-age novel narrated by a teenager dealing with alienation and identity.",
+	  "totalPages": 224,
+	  "rating": 4.3,
+	  "category": "Fiction",
+	  "tags": ["Classic", "Coming-of-age"],
+	  "publisher": "Little, Brown and Company",
+	  "yearOfPublishing": 1951
+	},
+	{
+	  "bookId": 5,
+	  "bookName": "Pride and Prejudice",
+	  "author": "Jane Austen",
+	  "image": "https://i.ibb.co/NSw1rDy/b5.jpg",
+	  "review": "A witty and romantic portrayal of societal norms and love in Georgian England.",
+	  "totalPages": 432,
+	  "rating": 4.7,
+	  "category": "Fiction",
+	  "tags": ["Classic", "Romance"],
+	  "publisher": "T. Egerton, Whitehall",
+	  "yearOfPublishing": 1813
+	},
+	{
+	  "bookId": 6,
+	  "bookName": "The Hobbit",
+	  "author": "J. R. R. Tolkien",
+	  "image": "https://i.ibb.co/sg44vqK/b6.jpg",
+	  "review": "An adventurous tale of Bilbo Baggins and his journey with dwarves to reclaim their homeland.",
+	  "totalPages": 310,
+	  "rating": 4.9,
+	  "category": "Fantasy",
+	  "tags": ["Adventure", "Quest"],
+	  "publisher": "Allen & Unwin",
+	  "yearOfPublishing": 1937
+	},
+	{
+	  "bookId": 7,
+	  "bookName": "The Alchemist",
+	  "author": "Paulo Coelho",
+	  "image": "https://i.ibb.co/ySZQFB3/b7.jpg",
+	  "review": "A philosophical novel about finding one's destiny and following dreams.",
+	  "totalPages": 197,
+	  "rating": 4.6,
+	  "category": "Fiction",
+	  "tags": ["Philosophical", "Adventure"],
+	  "publisher": "HarperCollins",
+	  "yearOfPublishing": 1988
+	},
+	{
+	  "bookId": 8,
+	  "bookName": "Harry Potter and the Sorcerer's Stone",
+	  "author": "J. K. Rowling",
+	  "image": "https://i.ibb.co/gSmTJR4/b8.jpg",
+	  "review": "The first book in the iconic Harry Potter series, introducing readers to the magical world of Hogwarts.",
+	  "totalPages": 320,
+	  "rating": 4.8,
+	  "category": "Fantasy",
+	  "tags": ["Magic", "Wizardry"],
+	  "publisher": "Bloomsbury Publishing",
+	  "yearOfPublishing": 1997
+	},
+	{
+	  "bookId": 9,
+	  "bookName": "The Lord of the Rings: The Fellowship of the Ring",
+	  "author": "J. R. R. Tolkien",
+	  "image": "https://i.ibb.co/tPd3RZK/b9.jpg",
+	  "review": "The first volume of J. R. R. Tolkien's epic fantasy novel series set in the world of Middle-earth.",
+	  "totalPages": 398,
+	  "rating": 4.8,
+	  "category": "Fantasy",
+	  "tags": ["Epic Fantasy", "Adventure"],
+	  "publisher": "Allen & Unwin",
+	  "yearOfPublishing": 1954
+	}
+  ]
+  
+
