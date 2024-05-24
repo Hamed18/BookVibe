@@ -1,4 +1,6 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import { saveReadBooks, saveWishList } from "../../Utility/Localstorage";
+import { useRef, useState } from "react";
 
 const BookDetails = () => {
   const books = useLoaderData();
@@ -9,6 +11,25 @@ const BookDetails = () => {
   const book = books.find((book) => book.bookId === idInt);
 
   const {image,bookName,author,category,review,tags,totalPages,publisher,yearOfPublishing,rating} = book;
+
+    // Button Functionality
+//	const [disableWishListBtn, setDisableWishListBtn] = useState(false);
+  const wishlistButtonRef = useRef();
+
+  // Local Storage Functionality
+  const handleReadBooks = () =>{
+	wishlistButtonRef.current.disabled = true; // button func
+	saveReadBooks(idInt);
+	alert("You Have Applied Successfully!");
+	//console.log(bookId)
+  }
+  const handleWishList = () =>{
+	wishlistButtonRef.current.disabled = true;  // if once clicked, will be disabled
+	saveWishList(idInt);
+	alert("You Have Applied Successfully!");
+	//console.log(bookId)
+  }
+
 
   return (
     <div className="max-w-5xl mx-auto my-12">
@@ -59,10 +80,10 @@ const BookDetails = () => {
 
         <div className="flex items-center justify-center">
 		  <div className="card-actions justify-start mr-4">
-            <button className="btn btn-primary">Read</button>
+            <button onClick={handleReadBooks} className="btn btn-primary">Read</button>
           </div>
           <div className="card-actions justify-start">
-            <button className="btn btn-primary">Wishlist</button>
+            <button onClick={handleWishList} ref={wishlistButtonRef} className="btn btn-primary">Wishlist</button>  {/* {readClicked && <button onClick={handleWishlistButtonClick}>Wishlist</button>} To hide btn*/}
           </div>
 		  </div>
         </div>
