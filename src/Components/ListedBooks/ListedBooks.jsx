@@ -14,10 +14,13 @@ const ListedBooks = () => {
   return (
     <div className="max-w-7xl">
 
+      <div className="w-full h-[100px] rounded-xl bg-gray-300"><p className="flex justify-center items-center text-3xl font-bold">Books</p>
+      </div>
+
       <div className="flex justify-center mt-4 mb-12">
         <div className="dropdown dropdown-end">
-          <div tabIndex={0} role="button" className="btn m-1">
-            Filter
+          <div tabIndex={0} role="button" className="btn m-1 bg-green-500 text-white">
+            Sort By
           </div>
           <ul
             tabIndex={0}

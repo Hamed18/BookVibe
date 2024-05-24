@@ -13,7 +13,7 @@ const Books = () => {
 
 	return (
 		<div>
-			<h3 className="text-center font-bold my-8">Books: {books.length}</h3>
+			<h3 className="text-center font-bold my-8 text-3xl">Books</h3>
 
 			<div className='lg:grid grid-cols-3 gap-4'>
 			{

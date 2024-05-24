@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const ReadBook = ({ readBook }) => {
 
   const {
@@ -41,9 +43,8 @@ const ReadBook = ({ readBook }) => {
               Category: {category}
             </span>
             <span className="p-2 mr-2 my-2 rounded-xl">Rating: {rating}</span>
-            <button className="btn bg-green-500 text-white font-bold p-2 rounded-xl">
-              View Details
-            </button>
+           
+            <Link to={`/Book/${bookId}`} className="btn bg-green-500 text-white font-bold p-2 rounded-xl"> View Details</Link>
           </div>
         </div>
       </div>

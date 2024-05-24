@@ -17,7 +17,7 @@ const Book = ({ book }) => {
         <h3 className="font-bold text-2xl">{bookName}</h3>
         <p>By: {author}</p>
         <hr />
-        <div className="flex justify-between">
+        <div className="flex justify-between flex-wrap">
           <span>{category}</span>
           <div>
             <span className="mr-1">{rating}</span>
