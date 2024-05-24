@@ -22,8 +22,7 @@ const PagesToRead = () => {
 	},[])
 
 	return (
-		<div>
-			<h3 className="">pages to read {ReadBookList.length}</h3>
+		<div className=''>
 			{
 				ReadBookList.map((readbook,idx) => <CustomShapeBarChart key={idx} readbook={readbook}></CustomShapeBarChart> )
 			}
