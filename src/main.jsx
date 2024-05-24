@@ -35,15 +35,18 @@ const router = createBrowserRouter([
         children: [
           {
             path: '',
-            element: <ReadList></ReadList>
+            element: <ReadList></ReadList>,
+            loader: () => fetch('books.json')           // bangla system
           },
           {
             path: 'read', // Changed path to 'read'
-            element: <ReadList></ReadList>
+            element: <ReadList></ReadList>,
+            loader: () => fetch('books.json')            // bangla system
           },
           {
             path: 'wishList', // Changed path to 'wishList'
             element: <WishList></WishList>, // Render WishList component for 'wishList' route
+            loader: () => fetch('books.json')           // bangla system
           },
         ],
       },
