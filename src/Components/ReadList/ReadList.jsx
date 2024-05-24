@@ -1,7 +1,8 @@
 import { useLoaderData } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { getStoredReadBooks } from "../../Utility/Localstorage";
 import ReadBook from "../ReadBook/ReadBook";
+import { BookContext } from "../ListedBooks/ListedBooks";
 
 const ReadList = () => {
 	const books = useLoaderData();  // all cards 
@@ -17,9 +18,13 @@ const ReadList = () => {
 		}
 	},[])
 
+	const BookType = useContext(BookContext);
+//	console.log(BookType);
+
+	
+
 	return (
 		<div>
-			<h3 className="text-center">No. of Read Books: {books.length}</h3>
 			{
 				ReadBookList.map((readBook,idx) => <ReadBook readBook={readBook} key={idx}></ReadBook>)
 			}

@@ -1,28 +1,55 @@
-import React from "react";
+import React, { createContext, useState } from "react";
 import { Outlet, NavLink } from "react-router-dom"; // corrected import
-import { useNavigate } from "react-router-dom";
+
+  //const {BookFilter,setBookFilter} = useState('');
+export const BookContext = createContext();
 
 const ListedBooks = () => {
+  const [BookFilter,setBookFilter] = useState('');
+
+  const handleFilter = (type) =>{
+    setBookFilter(type);
+  } ;
+
   return (
-    <div>
-      <div className="max-w-7xl rounded-xl bg-gray-100 h-[100px]">
-        <h3 className="flex justify-center items-center font-bold text-2xl">
-          Books List
-        </h3>
+    <div className="max-w-7xl">
+
+      <div className="flex justify-center mt-4 mb-12">
+        <div className="dropdown dropdown-end">
+          <div tabIndex={0} role="button" className="btn m-1">
+            Filter
+          </div>
+          <ul
+            tabIndex={0}
+            className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+            <li onClick={ () => {handleFilter("Rating")}}>
+              <a>Rating</a>
+            </li>
+            <li onClick={ () => {handleFilter("Page")}}>
+              <a>Number of Pages</a>
+            </li>
+            <li onClick={ () => {handleFilter("Year")}}>
+              <a>Publish Year</a>
+            </li>
+          </ul>
+        </div>
+
       </div>
-      <div className="max-w-7xl rounded-xl bg-gray-100 h-[100px]">
-        <h3 className="flex justify-center items-center font-bold text-2xl">
-          Sort By
-        </h3>
-      </div>
+
+      
 
       <div>
         <div className="flex items-center my-4">
           <NavLink to={`/ListedBooks/read`} className="mr-4">Read</NavLink> {/* Replaced Link with NavLink */}
-          <NavLink to={`/ListedBooks/wishList`} className="mr-4">Wish List</NavLink> {/* read documentation */}
-        </div>
+          <NavLink to={`/ListedBooks/wishList`} className="mr-4">Wish</NavLink> {/* read documentation */}
+        </div> 
+        <hr />
       </div>
-      <Outlet></Outlet>
+      
+      <BookContext.Provider value={BookFilter}>
+          <Outlet></Outlet>
+      </BookContext.Provider>
+
     </div>
   );
 };

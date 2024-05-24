@@ -20,7 +20,6 @@ const WishList = () => {
 
 	return (
 		<div>
-			<h3 className="text-center">No. of Wish Books: {books.length}</h3>
 			{
 				WishBookList.map((wishBook,idx) => <WishBook wishBook={wishBook} key={idx}></WishBook>)
 			}
