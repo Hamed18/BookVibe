@@ -13,6 +13,7 @@ import BookDetails from './Components/BookDetails/BookDetails.jsx';
 import WishList from './Components/WishList/WishList.jsx';
 import ReadList from './Components/ReadList/ReadList.jsx';
 import ListedBooks from './Components/ListedBooks/ListedBooks.jsx';
+import PagesToRead from './Components/PagesToRead/PagesToRead.jsx';
 
 const router = createBrowserRouter([
   {
@@ -50,6 +51,11 @@ const router = createBrowserRouter([
           },
         ],
       },
+      {
+        path: '/PagesToRead',
+        element: <PagesToRead></PagesToRead>,
+        loader: () => fetch('books.json'),          // bangla system
+      }
     ],
   },
 ]);

@@ -1,10 +1,10 @@
+import React from 'react';
 import { useLoaderData } from "react-router-dom";
 import { useContext, useEffect, useState } from "react";
 import { getStoredReadBooks } from "../../Utility/Localstorage";
-import ReadBook from "../ReadBook/ReadBook";
-import { BookContext } from "../ListedBooks/ListedBooks";
+import CustomShapeBarChart from '../CustomShapeBarChart/CustomShapeBarChart';
 
-const ReadList = () => {
+const PagesToRead = () => {
 	const books = useLoaderData();  // all cards 
 	const [ReadBookList, setReadBookList] = useState([]);
 	//const [DisplayReadBookList, setDisplayReadBookList] = useState([]);
@@ -17,36 +17,18 @@ const ReadList = () => {
 		//	console.log(books, storedBookIds, ReadBooks);
 		//	console.log(ReadBooks);
 		    setReadBookList(ReadBooks);
+		//	console.log(ReadBookList);
 		}
 	},[])
 
-	const BookType = useContext(BookContext);
-
-//	console.log(BookType);
-/*
-	if (BookType === "Rating"){
-		setDisplayReadBookList(appliedjobs);
-	}
-	else if (BookType === "Page"){
-	 const RemoteJob = ReadBookList..sort((a, b) => b - a); // cards that will be added to cart
-	 setDisplayReadBookList(RemoteJob);
-	}
-	else if (BookType === "Year"){
-	 const OnsiteJob = ReadBookList.filter((job) => job.remote_or_onsite === "Onsite"); // cards that will be added to cart
-	 setDisplayReadBookList(OnsiteJob);
-	}
-}   */
-
-
-	
-
 	return (
 		<div>
+			<h3 className="">pages to read {ReadBookList.length}</h3>
 			{
-				ReadBookList.map((readBook,idx) => <ReadBook readBook={readBook} key={idx}></ReadBook>)
+				ReadBookList.map((readbook,idx) => <CustomShapeBarChart key={idx} readbook={readbook}></CustomShapeBarChart> )
 			}
 		</div>
 	);
 };
 
-export default ReadList;
+export default PagesToRead;
