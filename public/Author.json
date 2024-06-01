@@ -1,0 +1,51 @@
+[
+	{
+	  "AuthorId": 1,
+	  "authorName": "J.K. Rowling",
+	  "Country": "United Kingdom",
+	  "PopularBooks": ["Harry Potter and the Philosopher's Stone", "Harry Potter and the Chamber of Secrets", "Harry Potter and the Prisoner of Azkaban"],
+	  "Prizes": ["Order of the British Empire (OBE)"],
+	  "Period": "Contemporary"
+	},
+	{
+	  "AuthorId": 2,
+	  "authorName": "Gabriel Garcia Marquez",
+	  "Country": "Colombia",
+	  "PopularBooks": ["One Hundred Years of Solitude", "Love in the Time of Cholera", "Chronicle of a Death Foretold"],
+	  "Prizes": ["Nobel Prize in Literature"],
+	  "Period": "Modern"
+	},
+	{
+	  "AuthorId": 3,
+	  "authorName": "Toni Morrison",
+	  "Country": "United States",
+	  "PopularBooks": ["Beloved", "The Bluest Eye", "Song of Solomon"],
+	  "Prizes": ["Pulitzer Prize for Fiction"],
+	  "Period": "Contemporary"
+	},
+	{
+	  "AuthorId": 4,
+	  "authorName": "Haruki Murakami",
+	  "Country": "Japan",
+	  "PopularBooks": ["Norwegian Wood", "Kafka on the Shore", "1Q84"],
+	  "Prizes": ["Nobel Prize in Literature"],
+	  "Period": "Contemporary"
+	},
+	{
+	  "AuthorId": 5,
+	  "authorName": "Chinua Achebe",
+	  "Country": "Nigeria",
+	  "PopularBooks": ["Things Fall Apart", "Arrow of God", "No Longer at Ease"],
+	  "Prizes": ["Man Booker International Prize"],
+	  "Period": "Modern"
+	},
+	{
+	  "AuthorId": 6,
+	  "authorName": "Jane Austen",
+	  "Country": "United Kingdom",
+	  "PopularBooks": ["Pride and Prejudice", "Sense and Sensibility", "Emma"],
+	  "Prizes": ["Nobel Prize in Literature"],
+	  "Period": "Classic"
+	}
+  ]
+  

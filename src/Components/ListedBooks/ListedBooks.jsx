@@ -1,5 +1,5 @@
 import React, { createContext, useState } from "react";
-import { Outlet, NavLink } from "react-router-dom"; // corrected import
+import { Outlet, NavLink, Link } from "react-router-dom"; // corrected import
 
   //const {BookFilter,setBookFilter} = useState('');
 export const BookContext = createContext();
@@ -43,8 +43,8 @@ const ListedBooks = () => {
 
       <div>
         <div className="flex items-center my-4">
-          <NavLink to={`/ListedBooks/read`} className="mr-4">Read</NavLink> {/* Replaced Link with NavLink */}
-          <NavLink to={`/ListedBooks/wishList`} className="mr-4">Wish</NavLink> {/* read documentation */}
+          <Link to={``} className="mr-4">Read</Link> {/* Replaced Link with NavLink */}
+          <Link to={`wishList`} className="mr-4">Wish</Link> {/* read documentation */}
         </div> 
         <hr />
       </div>

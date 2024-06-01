@@ -1,0 +1,51 @@
+[
+	{
+	  "FairName": "Frankfurt Book Fair",
+	  "Location": "Frankfurt, Germany",
+	  "Year": 2023,
+	  "Description": "The world's largest trade fair for books, attracting publishers, authors, and book enthusiasts from around the globe.",
+	  "Attendance": "Approximately 300,000 visitors annually",
+	  "NextScheduledDate": "October 11-15, 2024"
+	},
+	{
+	  "FairName": "London Book Fair",
+	  "Location": "London, United Kingdom",
+	  "Year": 2023,
+	  "Description": "One of the world's largest book fairs, serving as a platform for trading in rights and distribution of content.",
+	  "Attendance": "Over 25,000 attendees annually",
+	  "NextScheduledDate": "April 14-16, 2024"
+	},
+	{
+	  "FairName": "BookExpo America",
+	  "Location": "New York City, USA",
+	  "Year": 2023,
+	  "Description": "The leading book and author event for the North American publishing industry.",
+	  "Attendance": "Thousands of industry professionals",
+	  "NextScheduledDate": "May 30 - June 1, 2024"
+	},
+	{
+	  "FairName": "Bologna Children's Book Fair",
+	  "Location": "Bologna, Italy",
+	  "Year": 2023,
+	  "Description": "The most important international event dedicated to the children’s publishing and multimedia industry.",
+	  "Attendance": "Over 26,000 visitors from 75 countries",
+	  "NextScheduledDate": "March 25-28, 2024"
+	},
+	{
+	  "FairName": "Sharjah International Book Fair",
+	  "Location": "Sharjah, United Arab Emirates",
+	  "Year": 2023,
+	  "Description": "One of the largest book fairs in the world, promoting reading and cultural exchange.",
+	  "Attendance": "Over 2 million visitors annually",
+	  "NextScheduledDate": "November 6-16, 2024"
+	},
+	{
+	  "FairName": "Tokyo International Book Fair",
+	  "Location": "Tokyo, Japan",
+	  "Year": 2023,
+	  "Description": "A major book fair in Asia, featuring domestic and international publishers.",
+	  "Attendance": "Over 60,000 visitors annually",
+	  "NextScheduledDate": "July 3-6, 2024"
+	}
+  ]
+  

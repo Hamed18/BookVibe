@@ -1,10 +1,11 @@
 import { NavLink } from "react-router-dom";  {/* syntax */}
 const Header = () => {
-   const links = <>   {/* jsx */}
+   const links = <>   
        <li><NavLink to="/">Home</NavLink></li>
        <li><NavLink to="/ListedBooks">Listed Books</NavLink></li>
        <li><NavLink to="/PagesToRead">Pages To Read</NavLink></li>
-       <li><NavLink to="/MeetAuthors">Meet Authors</NavLink></li>
+       <li><NavLink to="/Author">Meet Authors</NavLink></li>
+       <li><NavLink to="/BookFair">Book Fair</NavLink></li>
    </>
 
   return (
@@ -29,7 +30,7 @@ const Header = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52">
             {links}   {/* syntax */}
           </ul>
         </div>

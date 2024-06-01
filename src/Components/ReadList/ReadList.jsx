@@ -7,7 +7,7 @@ import { BookContext } from "../ListedBooks/ListedBooks";
 const ReadList = () => {
 	const books = useLoaderData();  // all cards 
 	const [ReadBookList, setReadBookList] = useState([]);
-	//const [DisplayReadBookList, setDisplayReadBookList] = useState([]);
+	const [DisplayReadBookList, setDisplayReadBookList] = useState([]);
 
 	useEffect( () =>{
         const storedBookIds = getStoredReadBooks();  // id (each card has unique id) that are added in local storage
@@ -15,35 +15,35 @@ const ReadList = () => {
 		if (books && books.length > 0) {
 			const ReadBooks = books.filter(book => storedBookIds.includes(book.bookId)); // corrected filter method
 		//	console.log(books, storedBookIds, ReadBooks);
-		//	console.log(ReadBooks);
 		    setReadBookList(ReadBooks);
+		//	setDisplayReadBookList(ReadBooks);  // avoid re-render
 		}
 	},[])
 
-	const BookType = useContext(BookContext);
+	const BookType = useContext(BookContext);   // using context api
+	//console.log(BookType);
 
-//	console.log(BookType);
-/*
-	if (BookType === "Rating"){
-		setDisplayReadBookList(appliedjobs);
-	}
-	else if (BookType === "Page"){
-	 const RemoteJob = ReadBookList..sort((a, b) => b - a); // cards that will be added to cart
-	 setDisplayReadBookList(RemoteJob);
-	}
-	else if (BookType === "Year"){
-	 const OnsiteJob = ReadBookList.filter((job) => job.remote_or_onsite === "Onsite"); // cards that will be added to cart
-	 setDisplayReadBookList(OnsiteJob);
-	}
-}   */
+	useEffect( () =>{
+	   let sortedBooks = [...ReadBookList];
+		if (BookType === "Rating"){
+			sortedBooks.sort( (a,b) => b.rating - a.rating)   // slice()
+	   }
+	   else if (BookType === "Page"){
+			sortedBooks.sort( (a,b) => b.totalPages - a.totalPages)
+	   }
+	   else if (BookType === "Year"){
+			sortedBooks.sort( (a,b) => b.yearOfPublishing - a.yearOfPublishing)
+	   }
+        
+	   setDisplayReadBookList(sortedBooks);  // avoid re-render
+	},[BookType,ReadBookList])
 
-
-	
+    console.log(DisplayReadBookList);
 
 	return (
 		<div>
 			{
-				ReadBookList.map((readBook,idx) => <ReadBook readBook={readBook} key={idx}></ReadBook>)
+				DisplayReadBookList.map((readBook,idx) => <ReadBook readBook={readBook} key={idx}></ReadBook>)
 			}
 		</div>
 	);
